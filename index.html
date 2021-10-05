@@ -8,15 +8,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Nunito:wght@400;600;800&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<link rel="stylesheet" href="css/style.css">
 <body>
   <header class="navbar">
     <div class="container">
       <div class="navbar-top">
 
-        <a href="#" class="logo">
-          <img src="img/gorizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
+        <a href="#" class="navbar-logo">
+          <img src="img/gorizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo">
         </a>
         <!-- /.logo -->
 
@@ -32,21 +32,28 @@
           <span class="avatar__name">Nathan</span>
         </a>
 
+        <button class="menu-button navbar-top__menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
       </div>
-      <!-- /.navbar-wrapper -->
-      <nav class="navbar-nav">
-        <ul class="nav">
-          <li class="nav__item"><a href="#" class="nav__link">All Deals</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Hotels</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Activities</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Hotel Day Packages</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Restaurants</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Events</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Rodrigues</a></li>
-        </ul>
-      </nav>
-      <!-- /.navbar-nav -->
+      <!-- /.navbar-top -->
     </div>
+    <nav class="navbar-bottom">
+      <div class="container">
+        <ul class="navbar-menu">
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotel Day Packages</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Restaurants</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Events</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Rodrigues</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar-bottom -->
   </header>
 </body>
 </html>
