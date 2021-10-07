@@ -5,6 +5,7 @@
     display: flex
     align-items: center
     justify-content: space-between
+    padding-bottom: 20px
     &__offer
       margin-top: 4px
       margin-bottom: 0
@@ -14,6 +15,7 @@
       margin-bottom: 0
     &__description
       margin-top: 0
+      margin-bottom: 0
   &-wrapper
     display: flex
     flex-wrap: wrap
@@ -47,3 +49,39 @@
   &__counter
     font-size: 14px
     line-height: 18px
+.slider
+  position: relative
+  width: 728px
+.swiper
+  width: 100%
+  height: 450px
+  border-radius: 8px
+  &::after
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+    z-index: 10
+  &-button
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 30px
+    height: 30px
+    background-color: transparent
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 10px
+    z-index: 99
+    border: none
+    &--prev
+      left: 18px
+      background-image: url(../img/arrow-prev.svg)
+    &--next
+      right: 18px
+      background-image: url(../img/arrow-next.svg)
